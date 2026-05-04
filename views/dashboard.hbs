@@ -1,0 +1,52 @@
+<!-- coming from dashboard controller -->
+
+{{> menu}} <!-- getting partial (views/partials/menu.hbs) -->
+
+<h2 class="ui center aligned header">{{title}}</h2>
+<!-- title comes from dashboard controller "title: The manga coll..." -->
+
+<!-- semantic ui elements found on W3 schools -->
+<div class="ui three stackable cards centered">
+
+    <!--- manga -->
+
+    <div class="card">
+        <div class="content center aligned">
+            <i class="huge folder icon"></i>
+            <div class="header">Manga</div>
+            <div class="description">
+                Browse my manga collection!
+            </div>
+        </div>
+
+        <div class="extra content center aligned">
+            <a href="/manga" class="ui purple button">
+                View Manga
+            </a>
+        </div>
+    </div>
+
+    <!-- authors -->
+    <div class="card">
+        <div class="content center aligned">
+            <i class="huge users icon"></i>
+            <div class="header">Authors</div>
+            <div class="description">
+                See some manga creators!
+            </div>
+        </div>
+
+        <div class="extra content center aligned">
+            <a href="/authors" class="ui purple button">
+                View Authors
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="ui center aligned container" style="margin-top:20px;">
+    <a href="/" class="ui primary button">Back to Home</a>
+</div>
+
+</section>

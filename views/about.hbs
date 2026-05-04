@@ -1,0 +1,24 @@
+{{> menu}}
+
+<section class="ui container">
+  <h2>{{title}}</h2>
+
+  <div class="ui segment">
+    <h3>Author / Developer</h3>
+    <p><strong>Name:</strong> {{about.appAuthor.name}}</p>
+    <p><strong>Role:</strong> {{about.appAuthor.role}}</p>
+    <p><strong>Email:</strong> {{about.appAuthor.email}}</p>
+    <p><strong>Phone:</strong> {{about.appAuthor.phone}}</p>
+    <p><strong>Location:</strong> {{about.appAuthor.location}}</p>
+    <img src="{{about.appAuthor.mapImage}}" alt="Map" class="ui image">
+  </div>
+
+  <div class="ui segment">
+    <h3>App Statistics</h3>
+    <p><strong>Manga Count:</strong> {{about.stats.mangaCount}}</p>
+    <p><strong>Author Count:</strong> {{about.stats.authorCount}}</p>
+    <p><strong>App Version:</strong> {{about.stats.appVersion}}</p>
+  </div>
+
+  <a href="/dashboard" class="ui button back-btn">Back to Dashboard</a>
+</section>
